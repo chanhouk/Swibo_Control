@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A454277195BD4DA00E34501 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A454276195BD4DA00E34501 /* Foundation.framework */; };
+		1A454279195BD4DA00E34501 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A454278195BD4DA00E34501 /* CoreGraphics.framework */; };
+		1A45427B195BD4DA00E34501 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A45427A195BD4DA00E34501 /* UIKit.framework */; };
+		1A454281195BD4DA00E34501 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A45427F195BD4DA00E34501 /* InfoPlist.strings */; };
+		1A454283195BD4DA00E34501 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A454282195BD4DA00E34501 /* main.m */; };
+		1A454287195BD4DA00E34501 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A454286195BD4DA00E34501 /* AppDelegate.m */; };
+		1A45428A195BD4DA00E34501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A454288195BD4DA00E34501 /* Main.storyboard */; };
+		1A45428D195BD4DA00E34501 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A45428C195BD4DA00E34501 /* ViewController.m */; };
+		1A45428F195BD4DA00E34501 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A45428E195BD4DA00E34501 /* Images.xcassets */; };
+		1A454296195BD4DA00E34501 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A454295195BD4DA00E34501 /* XCTest.framework */; };
+		1A454297195BD4DA00E34501 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A454276195BD4DA00E34501 /* Foundation.framework */; };
+		1A454298195BD4DA00E34501 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A45427A195BD4DA00E34501 /* UIKit.framework */; };
+		1A4542A0195BD4DA00E34501 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A45429E195BD4DA00E34501 /* InfoPlist.strings */; };
+		1A4542A2195BD4DA00E34501 /* Swibo_ControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4542A1195BD4DA00E34501 /* Swibo_ControlTests.m */; };
+		1A4542C1195BD57C00E34501 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4542AF195BD57C00E34501 /* DDAbstractDatabaseLogger.m */; };
+		1A4542C2195BD57C00E34501 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4542B1195BD57C00E34501 /* DDASLLogger.m */; };
+		1A4542C3195BD57C00E34501 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4542B3195BD57C00E34501 /* DDFileLogger.m */; };
+		1A4542C4195BD57C00E34501 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4542B6195BD57C00E34501 /* DDLog.m */; };
+		1A4542C5195BD57C00E34501 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4542B8195BD57C00E34501 /* DDTTYLogger.m */; };
+		1A4542C6195BD57C00E34501 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4542BB195BD57C00E34501 /* DDContextFilterLogFormatter.m */; };
+		1A4542C7195BD57C00E34501 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4542BD195BD57C00E34501 /* DDDispatchQueueLogFormatter.m */; };
+		1A4542C8195BD57C00E34501 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4542BF195BD57C00E34501 /* DDMultiFormatter.m */; };
+		1A4542C9195BD57C00E34501 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1A4542C0195BD57C00E34501 /* README.txt */; };
+		1A4542CD195BD59000E34501 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4542CC195BD59000E34501 /* GCDAsyncUdpSocket.m */; };
+		1A4542CF195BD5A600E34501 /* Swibo Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A4542CE195BD5A600E34501 /* Swibo Logo.png */; };
+		1A4542D1195BD9B300E34501 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4542D0195BD9B300E34501 /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A454299195BD4DA00E34501 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A45426B195BD4DA00E34501 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A454272195BD4DA00E34501;
+			remoteInfo = Swibo_Control;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A454273195BD4DA00E34501 /* Swibo_Control.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swibo_Control.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A454276195BD4DA00E34501 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A454278195BD4DA00E34501 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A45427A195BD4DA00E34501 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A45427E195BD4DA00E34501 /* Swibo_Control-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Swibo_Control-Info.plist"; sourceTree = "<group>"; };
+		1A454280195BD4DA00E34501 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A454282195BD4DA00E34501 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A454284195BD4DA00E34501 /* Swibo_Control-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swibo_Control-Prefix.pch"; sourceTree = "<group>"; };
+		1A454285195BD4DA00E34501 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1A454286195BD4DA00E34501 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1A454289195BD4DA00E34501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A45428B195BD4DA00E34501 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1A45428C195BD4DA00E34501 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1A45428E195BD4DA00E34501 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A454294195BD4DA00E34501 /* Swibo_ControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swibo_ControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A454295195BD4DA00E34501 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1A45429D195BD4DA00E34501 /* Swibo_ControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Swibo_ControlTests-Info.plist"; sourceTree = "<group>"; };
+		1A45429F195BD4DA00E34501 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A4542A1195BD4DA00E34501 /* Swibo_ControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Swibo_ControlTests.m; sourceTree = "<group>"; };
+		1A4542AE195BD57C00E34501 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		1A4542AF195BD57C00E34501 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		1A4542B0195BD57C00E34501 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		1A4542B1195BD57C00E34501 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		1A4542B2195BD57C00E34501 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		1A4542B3195BD57C00E34501 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		1A4542B4195BD57C00E34501 /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		1A4542B5195BD57C00E34501 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		1A4542B6195BD57C00E34501 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		1A4542B7195BD57C00E34501 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		1A4542B8195BD57C00E34501 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		1A4542BA195BD57C00E34501 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		1A4542BB195BD57C00E34501 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		1A4542BC195BD57C00E34501 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		1A4542BD195BD57C00E34501 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		1A4542BE195BD57C00E34501 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		1A4542BF195BD57C00E34501 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		1A4542C0195BD57C00E34501 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		1A4542CB195BD59000E34501 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		1A4542CC195BD59000E34501 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		1A4542CE195BD5A600E34501 /* Swibo Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Swibo Logo.png"; sourceTree = "<group>"; };
+		1A4542D0195BD9B300E34501 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A454270195BD4DA00E34501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4542D1195BD9B300E34501 /* CoreMotion.framework in Frameworks */,
+				1A454279195BD4DA00E34501 /* CoreGraphics.framework in Frameworks */,
+				1A45427B195BD4DA00E34501 /* UIKit.framework in Frameworks */,
+				1A454277195BD4DA00E34501 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A454291195BD4DA00E34501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A454296195BD4DA00E34501 /* XCTest.framework in Frameworks */,
+				1A454298195BD4DA00E34501 /* UIKit.framework in Frameworks */,
+				1A454297195BD4DA00E34501 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A45426A195BD4DA00E34501 = {
+			isa = PBXGroup;
+			children = (
+				1A4542CE195BD5A600E34501 /* Swibo Logo.png */,
+				1A4542CA195BD59000E34501 /* UDP */,
+				1A4542AD195BD57C00E34501 /* Logging */,
+				1A45427C195BD4DA00E34501 /* Swibo_Control */,
+				1A45429B195BD4DA00E34501 /* Swibo_ControlTests */,
+				1A454275195BD4DA00E34501 /* Frameworks */,
+				1A454274195BD4DA00E34501 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A454274195BD4DA00E34501 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A454273195BD4DA00E34501 /* Swibo_Control.app */,
+				1A454294195BD4DA00E34501 /* Swibo_ControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A454275195BD4DA00E34501 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A4542D0195BD9B300E34501 /* CoreMotion.framework */,
+				1A454276195BD4DA00E34501 /* Foundation.framework */,
+				1A454278195BD4DA00E34501 /* CoreGraphics.framework */,
+				1A45427A195BD4DA00E34501 /* UIKit.framework */,
+				1A454295195BD4DA00E34501 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A45427C195BD4DA00E34501 /* Swibo_Control */ = {
+			isa = PBXGroup;
+			children = (
+				1A454285195BD4DA00E34501 /* AppDelegate.h */,
+				1A454286195BD4DA00E34501 /* AppDelegate.m */,
+				1A454288195BD4DA00E34501 /* Main.storyboard */,
+				1A45428B195BD4DA00E34501 /* ViewController.h */,
+				1A45428C195BD4DA00E34501 /* ViewController.m */,
+				1A45428E195BD4DA00E34501 /* Images.xcassets */,
+				1A45427D195BD4DA00E34501 /* Supporting Files */,
+			);
+			path = Swibo_Control;
+			sourceTree = "<group>";
+		};
+		1A45427D195BD4DA00E34501 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A45427E195BD4DA00E34501 /* Swibo_Control-Info.plist */,
+				1A45427F195BD4DA00E34501 /* InfoPlist.strings */,
+				1A454282195BD4DA00E34501 /* main.m */,
+				1A454284195BD4DA00E34501 /* Swibo_Control-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A45429B195BD4DA00E34501 /* Swibo_ControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A4542A1195BD4DA00E34501 /* Swibo_ControlTests.m */,
+				1A45429C195BD4DA00E34501 /* Supporting Files */,
+			);
+			path = Swibo_ControlTests;
+			sourceTree = "<group>";
+		};
+		1A45429C195BD4DA00E34501 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A45429D195BD4DA00E34501 /* Swibo_ControlTests-Info.plist */,
+				1A45429E195BD4DA00E34501 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A4542AD195BD57C00E34501 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				1A4542AE195BD57C00E34501 /* DDAbstractDatabaseLogger.h */,
+				1A4542AF195BD57C00E34501 /* DDAbstractDatabaseLogger.m */,
+				1A4542B0195BD57C00E34501 /* DDASLLogger.h */,
+				1A4542B1195BD57C00E34501 /* DDASLLogger.m */,
+				1A4542B2195BD57C00E34501 /* DDFileLogger.h */,
+				1A4542B3195BD57C00E34501 /* DDFileLogger.m */,
+				1A4542B4195BD57C00E34501 /* DDLog+LOGV.h */,
+				1A4542B5195BD57C00E34501 /* DDLog.h */,
+				1A4542B6195BD57C00E34501 /* DDLog.m */,
+				1A4542B7195BD57C00E34501 /* DDTTYLogger.h */,
+				1A4542B8195BD57C00E34501 /* DDTTYLogger.m */,
+				1A4542B9195BD57C00E34501 /* Extensions */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		1A4542B9195BD57C00E34501 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A4542BA195BD57C00E34501 /* DDContextFilterLogFormatter.h */,
+				1A4542BB195BD57C00E34501 /* DDContextFilterLogFormatter.m */,
+				1A4542BC195BD57C00E34501 /* DDDispatchQueueLogFormatter.h */,
+				1A4542BD195BD57C00E34501 /* DDDispatchQueueLogFormatter.m */,
+				1A4542BE195BD57C00E34501 /* DDMultiFormatter.h */,
+				1A4542BF195BD57C00E34501 /* DDMultiFormatter.m */,
+				1A4542C0195BD57C00E34501 /* README.txt */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1A4542CA195BD59000E34501 /* UDP */ = {
+			isa = PBXGroup;
+			children = (
+				1A4542CB195BD59000E34501 /* GCDAsyncUdpSocket.h */,
+				1A4542CC195BD59000E34501 /* GCDAsyncUdpSocket.m */,
+			);
+			path = UDP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A454272195BD4DA00E34501 /* Swibo_Control */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A4542A5195BD4DA00E34501 /* Build configuration list for PBXNativeTarget "Swibo_Control" */;
+			buildPhases = (
+				1A45426F195BD4DA00E34501 /* Sources */,
+				1A454270195BD4DA00E34501 /* Frameworks */,
+				1A454271195BD4DA00E34501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swibo_Control;
+			productName = Swibo_Control;
+			productReference = 1A454273195BD4DA00E34501 /* Swibo_Control.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A454293195BD4DA00E34501 /* Swibo_ControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A4542A8195BD4DA00E34501 /* Build configuration list for PBXNativeTarget "Swibo_ControlTests" */;
+			buildPhases = (
+				1A454290195BD4DA00E34501 /* Sources */,
+				1A454291195BD4DA00E34501 /* Frameworks */,
+				1A454292195BD4DA00E34501 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A45429A195BD4DA00E34501 /* PBXTargetDependency */,
+			);
+			name = Swibo_ControlTests;
+			productName = Swibo_ControlTests;
+			productReference = 1A454294195BD4DA00E34501 /* Swibo_ControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A45426B195BD4DA00E34501 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Swibo_Limit;
+				TargetAttributes = {
+					1A454272195BD4DA00E34501 = {
+						DevelopmentTeam = ELE6HALE44;
+					};
+					1A454293195BD4DA00E34501 = {
+						TestTargetID = 1A454272195BD4DA00E34501;
+					};
+				};
+			};
+			buildConfigurationList = 1A45426E195BD4DA00E34501 /* Build configuration list for PBXProject "Swibo_Control" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A45426A195BD4DA00E34501;
+			productRefGroup = 1A454274195BD4DA00E34501 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A454272195BD4DA00E34501 /* Swibo_Control */,
+				1A454293195BD4DA00E34501 /* Swibo_ControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A454271195BD4DA00E34501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4542CF195BD5A600E34501 /* Swibo Logo.png in Resources */,
+				1A45428F195BD4DA00E34501 /* Images.xcassets in Resources */,
+				1A454281195BD4DA00E34501 /* InfoPlist.strings in Resources */,
+				1A4542C9195BD57C00E34501 /* README.txt in Resources */,
+				1A45428A195BD4DA00E34501 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A454292195BD4DA00E34501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4542A0195BD4DA00E34501 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A45426F195BD4DA00E34501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4542C4195BD57C00E34501 /* DDLog.m in Sources */,
+				1A4542C5195BD57C00E34501 /* DDTTYLogger.m in Sources */,
+				1A45428D195BD4DA00E34501 /* ViewController.m in Sources */,
+				1A4542C6195BD57C00E34501 /* DDContextFilterLogFormatter.m in Sources */,
+				1A4542CD195BD59000E34501 /* GCDAsyncUdpSocket.m in Sources */,
+				1A4542C3195BD57C00E34501 /* DDFileLogger.m in Sources */,
+				1A454287195BD4DA00E34501 /* AppDelegate.m in Sources */,
+				1A4542C1195BD57C00E34501 /* DDAbstractDatabaseLogger.m in Sources */,
+				1A4542C8195BD57C00E34501 /* DDMultiFormatter.m in Sources */,
+				1A4542C7195BD57C00E34501 /* DDDispatchQueueLogFormatter.m in Sources */,
+				1A454283195BD4DA00E34501 /* main.m in Sources */,
+				1A4542C2195BD57C00E34501 /* DDASLLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A454290195BD4DA00E34501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A4542A2195BD4DA00E34501 /* Swibo_ControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A45429A195BD4DA00E34501 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A454272195BD4DA00E34501 /* Swibo_Control */;
+			targetProxy = 1A454299195BD4DA00E34501 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A45427F195BD4DA00E34501 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A454280195BD4DA00E34501 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A454288195BD4DA00E34501 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A454289195BD4DA00E34501 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A45429E195BD4DA00E34501 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A45429F195BD4DA00E34501 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A4542A3195BD4DA00E34501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A4542A4195BD4DA00E34501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A4542A6195BD4DA00E34501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swibo_Control/Swibo_Control-Prefix.pch";
+				INFOPLIST_FILE = "Swibo_Control/Swibo_Control-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A4542A7195BD4DA00E34501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swibo_Control/Swibo_Control-Prefix.pch";
+				INFOPLIST_FILE = "Swibo_Control/Swibo_Control-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1A4542A9195BD4DA00E34501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Swibo_Control.app/Swibo_Control";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swibo_Control/Swibo_Control-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Swibo_ControlTests/Swibo_ControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1A4542AA195BD4DA00E34501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Swibo_Control.app/Swibo_Control";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Swibo_Control/Swibo_Control-Prefix.pch";
+				INFOPLIST_FILE = "Swibo_ControlTests/Swibo_ControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A45426E195BD4DA00E34501 /* Build configuration list for PBXProject "Swibo_Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4542A3195BD4DA00E34501 /* Debug */,
+				1A4542A4195BD4DA00E34501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A4542A5195BD4DA00E34501 /* Build configuration list for PBXNativeTarget "Swibo_Control" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4542A6195BD4DA00E34501 /* Debug */,
+				1A4542A7195BD4DA00E34501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A4542A8195BD4DA00E34501 /* Build configuration list for PBXNativeTarget "Swibo_ControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A4542A9195BD4DA00E34501 /* Debug */,
+				1A4542AA195BD4DA00E34501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A45426B195BD4DA00E34501 /* Project object */;
+}
